@@ -1,20 +1,15 @@
-import "./globals.css";
-import Header from "../components/Header";
-import { CartProvider } from "../context/CartContext";
-import { WishlistProvider } from "../context/WishlistContext";
+import './globals.css';
 
-export const metadata = { title: "Store", description: "Fake Store Demo" };
+export const metadata = {
+  title: 'Mettā Muse - E-Commerce Store',
+  description: 'Discover our premium collection',
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <CartProvider>
-          <WishlistProvider>
-            <Header />
-            {children}
-          </WishlistProvider>
-        </CartProvider>
+      <body suppressHydrationWarning>
+        {children}
       </body>
     </html>
   );

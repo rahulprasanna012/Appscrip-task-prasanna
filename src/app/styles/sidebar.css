@@ -1,0 +1,83 @@
+.main-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 250px;
+  min-height: 600px;
+}
+
+.sidebar.hidden {
+  display: none;
+}
+
+.filter-section {
+  margin-bottom: 30px;
+}
+
+.filter-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  transition: opacity 0.3s ease;
+}
+
+.filter-title:hover {
+  opacity: 0.6;
+}
+
+.filter-content {
+  display: none;
+}
+
+.filter-content.active {
+  display: block;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.filter-item input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.filter-item label {
+  cursor: pointer;
+  flex: 1;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dddddd;
+  font-size: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:hover {
+  border-color: #000000;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #000000;
+}
