@@ -11,6 +11,7 @@ import './styles/sidebar.css';
 import './styles/products.css';
 import './styles/panels.css';
 import './styles/responsive.css';
+import Footer from '@/components/Footer.js';
 
 const API_BASE = 'https://fakestoreapi.com';
 
@@ -211,6 +212,7 @@ export default function Home() {
             />
           )}
         </div>
+       
       </div>
 
       <CartPanel
@@ -228,6 +230,7 @@ export default function Home() {
         onRemove={removeFromWishlist}
         onAddToCart={addToCart}
       />
+       <Footer/>
     </div>
   );
 }
